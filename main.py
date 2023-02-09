@@ -5,9 +5,16 @@ def thirtyTwoOperation():
     testAdd = 0
     x = 2
     y = 2
-    for i in range(10):
+    for i in range(10 ** 10):
         x + y
     print("finished first execution")
+    for i in range(5 * (10 ** 9)):
+        x * y
+    print("finished second execution")
+    for i in range(2 * (10 ** 9)):
+        x / y
+    timerEnd = time.time() - timer_Start
+    print("The Execution Time for 32-bit Integer Operation: " + str(timerEnd) + " seconds")
 
 def sixtyFourFloatOperation():
     pass
