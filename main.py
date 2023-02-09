@@ -5,6 +5,9 @@ def thirtyTwoOperation():
     testAdd = 0
     x = 2
     y = 2
+    for i in range(10):
+        x + y
+    print("finished first execution")
 
 def sixtyFourFloatOperation():
     pass
