@@ -17,7 +17,13 @@ def thirtyTwoOperation():
     print("The Execution Time for 32-bit Integer Operation: " + str(timerEnd) + " seconds")
 
 def sixtyFourFloatOperation():
-    pass
+    timer_Start = time.time()
+    floatX = 1.2
+    floatY = 1.2
+    for i in range(10 ** 10):
+        floatX + floatY
+    print("finished first execution")
+    
 
 def hardDriveBenchmark1():
     pass
