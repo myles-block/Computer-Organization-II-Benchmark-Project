@@ -11,3 +11,6 @@ def hardDriveBenchmark1():
 
 def hardDriveBenchmark2():
     pass
+
+def memoryBenchmark():
+    pass
