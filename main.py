@@ -53,4 +53,6 @@ def memoryBenchmark():
     timerEnd = time.time() - timer_Start
     print("The Execution Time for Memory Benchmark: " + str(timerEnd) + " seconds")
 
-thirtyTwoOperation()
+# thirtyTwoOperation()
+# sixtyFourFloatOperation()
+# memoryBenchmark()
