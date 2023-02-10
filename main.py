@@ -1,4 +1,5 @@
 import time
+import array as arr
 
 def thirtyTwoOperation():
     timer_Start = time.time()
