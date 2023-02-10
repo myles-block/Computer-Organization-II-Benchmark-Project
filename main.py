@@ -30,8 +30,7 @@ def sixtyFourFloatOperation():
         floatX / floatY
     timerEnd = time.time() - timer_Start
     print("The Execution Time for 64-bit Integer operation: " + str(timerEnd) + " seconds")
-    
-    
+
 
 def hardDriveBenchmark1():
     pass
@@ -40,6 +39,13 @@ def hardDriveBenchmark2():
     pass
 
 def memoryBenchmark():
-    pass
+    timer_Start = time.time()
+    array_Length = (5 * (10 ** 9))
+    # there are 4 bytes in an integer
+    array = arr.array("i", [0] * array_Length)
+    print("reading through array...")
+    for index in range(array_Length):
+        readit = array[index]
+    print("writing through array...")
 
 thirtyTwoOperation()
