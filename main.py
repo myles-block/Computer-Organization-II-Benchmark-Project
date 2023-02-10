@@ -34,7 +34,12 @@ def sixtyFourFloatOperation():
 
 
 def hardDriveBenchmark1():
-    pass
+    timer_Start = time.time()
+    with open("Hard_Drive_1.txt", "wb") as writer:
+        for i in range(10 ** 9):
+            writer.write(b"0" * 100) # writing in binary
+
+    print("in reading mode...")
 
 def hardDriveBenchmark2():
     pass
