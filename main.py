@@ -40,6 +40,11 @@ def hardDriveBenchmark1():
             writer.write(b"0" * 100) # writing in binary
 
     print("in reading mode...")
+    with open("Hard_Drive_1.txt", "rb") as reader:
+        for i in range(10 ** 9):
+            reader.read(100)
+    timerEnd = time.time() - timer_Start
+    print("The Execution Time for Hard Drive Bookmark 1: " + str(timerEnd) + " seconds")
 
 def hardDriveBenchmark2():
     pass
