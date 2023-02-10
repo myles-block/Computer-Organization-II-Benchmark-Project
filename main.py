@@ -48,5 +48,9 @@ def memoryBenchmark():
     for index in range(array_Length):
         readit = array[index]
     print("writing through array...")
+    for index in range(array_Length):
+        array[index] = 2
+    timerEnd = time.time() - timer_Start
+    print("The Execution Time for Memory Benchmark: " + str(timerEnd) + " seconds")
 
 thirtyTwoOperation()
