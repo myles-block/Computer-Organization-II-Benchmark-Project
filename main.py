@@ -47,17 +47,18 @@ def hardDriveBenchmark1():
     print("The Execution Time for Hard Drive Bookmark 1: " + str(timerEnd) + " seconds")
 
 def hardDriveBenchmark2():
+    iterator = 10 ** 9 // 10000
     timer_Start = time.time()
     with open("Hard_Drive_2.txt", "wb") as writer:
-        for i in range(10 ** 9):
+        for i in range(iterator):
             writer.write(b"0" * 10000)
     
     print("in reading mode")
     with open("Hard_Drive_2.txt", "rb") as reader:
-        for i in range(10 ** 9):
+        for i in range(iterator):
             reader.read(10000)
     timerEnd = time.time() - timer_Start
-    print("The Execution Time for Hard Drive Bookmark 2")
+    print("The Execution Time for Hard Drive Bookmark 2: " + str(timerEnd) + " seconds")
 
 def memoryBenchmark():
     timer_Start = time.time()
