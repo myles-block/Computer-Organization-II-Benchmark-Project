@@ -23,6 +23,14 @@ def sixtyFourFloatOperation():
     for i in range(10 ** 10):
         floatX + floatY
     print("finished first execution")
+    for i in range(5 * (10 ** 9)):
+        floatX * floatY
+    print("finished second execution")
+    for i in range(2 * (10 ** 9)):
+        floatX / floatY
+    timerEnd = time.time() - timer_Start
+    print("The Execution Time for 64-bit Integer operation: " + str(timerEnd) + " seconds")
+    
     
 
 def hardDriveBenchmark1():
