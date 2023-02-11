@@ -64,7 +64,7 @@ def memoryBenchmark():
     timer_Start = time.time()
     array_Length = (5 * (10 ** 9))
     # there are 4 bytes in an integer
-    array = arr.array("i", [0] * array_Length)
+    array = arr.array("i", [0] * array_Length) # sets array to 4 byte integer array
     print("reading through array...")
     for index in range(array_Length):
         readit = array[index]
