@@ -30,7 +30,7 @@ def sixtyFourFloatOperation():
     for i in range(2 * (10 ** 9)):
         floatX / floatY
     timerEnd = time.time() - timer_Start
-    print("The Execution Time for 64-bit Integer operation: " + str(timerEnd) + " seconds")
+    print("The Execution Time for 64-bit Float operation: " + str(timerEnd) + " seconds")
 
 
 def hardDriveBenchmark1():
@@ -44,7 +44,7 @@ def hardDriveBenchmark1():
         for i in range(10 ** 9):
             reader.read(100)
     timerEnd = time.time() - timer_Start
-    print("The Execution Time for Hard Drive Bookmark 1: " + str(timerEnd) + " seconds")
+    print("The Execution Time for Hard Drive Benchmark 1: " + str(timerEnd) + " seconds")
 
 def hardDriveBenchmark2():
     iterator = 10 ** 9 // 10000
@@ -58,7 +58,7 @@ def hardDriveBenchmark2():
         for i in range(iterator):
             reader.read(10000)
     timerEnd = time.time() - timer_Start
-    print("The Execution Time for Hard Drive Bookmark 2: " + str(timerEnd) + " seconds")
+    print("The Execution Time for Hard Drive Benchmark 2: " + str(timerEnd) + " seconds")
 
 def memoryBenchmark():
     timer_Start = time.time()
@@ -77,3 +77,4 @@ def memoryBenchmark():
 # thirtyTwoOperation()
 # sixtyFourFloatOperation()
 # memoryBenchmark()
+hardDriveBenchmark2()
